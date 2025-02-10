@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Test Survey Site</title>
+  </head>
+  <body>
+    <h1 id="title">
+      Test Surevy Site
+    </h1>
+    <p>
+      This will be the description of this form site.
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name <input required type="text" id="name" placeholder="Enter your name"/></label>
+        <label id="email-label" for="email">Email <input required type="text" id="email" placeholder="Enter your email"/></label>
+        <label id="age-label" for="age">Age (optional) <input type="number" id="age" min="15" max="100" placeholder="Age"/> </label>
+      </fieldset>
+    </form>
+  </body>
+</html>
