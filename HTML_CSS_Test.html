@@ -2,20 +2,57 @@
 <html lang="en">
   <head>
     <title>Test Survey Site</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <h1 id="title">
-      Test Surevy Site
+      Test Survey Site
     </h1>
-    <p>
+    <p id="description">
       This will be the description of this form site.
     </p>
     <form id="survey-form">
-      <fieldset>
-        <label id="name-label" for="name">Name <input required type="text" id="name" placeholder="Enter your name"/></label>
-        <label id="email-label" for="email">Email <input required type="text" id="email" placeholder="Enter your email"/></label>
-        <label id="age-label" for="age">Age (optional) <input type="number" id="age" min="15" max="100" placeholder="Age"/> </label>
-      </fieldset>
+      <div>
+        <label id="name-label" for="name">Name </label>
+        <input required type="text" id="name" placeholder="Enter your name" class="left-block rounded"/>
+      </div>
+      <div>
+        <label id="email-label" for="email">Email </label>
+        <input required type="email" id="email" placeholder="Enter your email" class="left-block rounded"/>
+      </div>
+      <div>
+        <label id="number-label" for="age">Age (optional) </label>
+        <input type="number" id="number" min="15" max="100" placeholder="Age" class="left-block rounded"/> 
+      </div>
+      </div>
+      <div>
+        <label id="topic-label" for="topic">
+          Choose a topic you want to learn in the future: </label>
+        <select id="dropdown" class="left-block rounded">
+          <option value="">Select one</option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+        </div>
+        <div>
+          <legend>What platform would you like to work with?</legend>
+          <label for="ios-platform" class="left-block"><input id="ios-platform" type="radio" name="platform" value="ios" class="inline" checked /> iOS Mobile</label>
+        <label for="web-platform" class="left-block"><input id="web-platform" type="radio" name="platform" value= "web" class="inline" /> Web Development</label>
+      </div>
+      <div class="checkbox">
+        <legend>Choose ways you would like to learn</legend>
+        <label for="learn-book"><input id="learn-book" type="checkbox" name="learn" value="book"/> Books</label>
+        <label for="learn-video"><input id="learn-video" type="checkbox" name="learn" value="video"/> Videos</label>
+        <label for="learn-audio"><input id="learn-audio" type="checkbox" name="learn" value="audio"/> Audio</label>
+        <label for="learn-tutor"><input id="learn-tutor" type="checkbox" name="learn" value="tutor"/> Tutor</label>
+      </div>
+      <div>
+        <label for="bestlearn-textarea">Tell us the best way you learn new topics:
+          <textarea name="bestlearn-textarea" class="left-block rounded"></textarea>
+        </label>
+      </div>
+      <input id="submit" type="submit" />
     </form>
   </body>
 </html>
